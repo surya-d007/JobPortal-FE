@@ -24,7 +24,7 @@ const JobCard = ({
       onClick={handleApplyClick}
       style={{ width: "100%" }}
     >
-      <div className="bg-white my-6 py-3 shadow-md rounded-lg hover:outline hover:outline-offset-2 hover:outline-black flex flex-col p-2 md:p-5">
+      <div className="bg-white my-4 py-3 shadow-md rounded-lg hover:outline hover:outline-offset-2 hover:outline-black flex flex-col p-2 md:p-5">
         <div className="flex flex-row gap-2 md:gap-4">
           <div className="basis-2/6 md:basis-1/6 flex flex-col justify-center items-center text-center">
             <img
