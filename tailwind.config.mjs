@@ -7,10 +7,19 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: ["var(--font-poppins)", "sans-serif"], // Add Poppins
+        geistSans: ["var(--font-geist-sans)", "sans-serif"], // Optional
+        geistMono: ["var(--font-geist-mono)", "monospace"], // Optional
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+    },
+
+    borderRadius: {
+      lg: "1rem",
     },
   },
   plugins: [],

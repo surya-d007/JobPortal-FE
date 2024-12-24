@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Topbar({ onHamburgerClick }) {
   return (
-    <div className="flex flex-row items-center justify-between p-5 py-6 shadow-xl">
+    <div className="flex flex-row items-center justify-between p-5 py-3 md:py-4 lg:py-5 shadow-xl font-poppins">
       {/* Hamburger Icon for smaller screens */}
       <button
         className="md:hidden"
@@ -26,36 +26,44 @@ export default function Topbar({ onHamburgerClick }) {
       </button>
 
       {/* Title */}
-      <h1 className="text-lg font-bold basis-full md:basis-1/4 text-center md:text-left">
+      <h1 className="text-lg font-bold basis-full md:basis-1/4 text-center md:text-left ">
         JobFound
       </h1>
 
       {/* Extra Content: Evenly spread on larger screens */}
       <div className="hidden md:flex basis-3/4 items-center justify-evenly">
-        <button className="flex items-center gap-2">
-          <h1 className="text-lg font-bold">Events</h1>
+        <button className="flex items-center gap-2 group">
+          <h1 className="text-lg font-bold group-hover:underline group-hover:underline-offset-4 group-hover:decoration-2">
+            Events
+          </h1>
           {/* Down Arrow SVG */}
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-4 w-4"
-            viewBox="0 0 15 15"
-            fill="none"
+            viewBox="0 0 360 512"
+            className="h-6 w-6 p-1 transform scale-x-125  transition-transform duration-200 group-hover:rotate-180"
           >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M3.85355 2.14645C3.65829 1.95118 3.34171 1.95118 3.14645 2.14645C2.95118 2.34171 2.95118 2.65829 3.14645 2.85355L7.14645 6.85355C7.34171 7.04882 7.65829 7.04882 7.85355 6.85355L11.8536 2.85355C12.0488 2.65829 12.0488 2.34171 11.8536 2.14645C11.6583 1.95118 11.3417 1.95118 11.1464 2.14645L7.5 5.79289L3.85355 2.14645ZM3.85355 8.14645C3.65829 7.95118 3.34171 7.95118 3.14645 8.14645C2.95118 8.34171 2.95118 8.65829 3.14645 8.85355L7.14645 12.8536C7.34171 13.0488 7.65829 13.0488 7.85355 12.8536L11.8536 8.85355C12.0488 8.65829 12.0488 8.34171 11.8536 8.14645C11.6583 7.95118 11.3417 7.95118 11.1464 8.14645L7.5 11.7929L3.85355 8.14645Z"
-              fill="currentColor"
-            />
+            <path d="M143 256.3L7 120.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0L313 86.3c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.4 9.5-24.6 9.5-34 .1zm34 192l136-136c9.4-9.4 9.4-24.6 0-33.9l-22.6-22.6c-9.4-9.4-24.6-9.4-33.9 0L160 352.1l-96.4-96.4c-9.4-9.4-24.6-9.4-33.9 0L7 278.3c-9.4 9.4-9.4 24.6 0 33.9l136 136c9.4 9.5 24.6 9.5 34 .1z" />
           </svg>
         </button>
 
         <Link href="/" className="text-lg font-bold">
-          Jobs
+          <h1 className="hover:underline hover:underline-offset-4 hover:decoration-2">
+            Jobs
+          </h1>
         </Link>
-        <Link href="/" className="text-lg font-bold">
-          Recently Viewed
-        </Link>
+        <button className="flex items-center gap-2 group">
+          <h1 className="text-lg font-bold group-hover:underline group-hover:underline-offset-4 group-hover:decoration-2">
+            Recently Viewed
+          </h1>
+          {/* Down Arrow SVG */}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 360 512"
+            className="h-6 w-6 p-1 transform scale-x-125  transition-transform duration-200 group-hover:rotate-180"
+          >
+            <path d="M143 256.3L7 120.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0L313 86.3c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.4 9.5-24.6 9.5-34 .1zm34 192l136-136c9.4-9.4 9.4-24.6 0-33.9l-22.6-22.6c-9.4-9.4-24.6-9.4-33.9 0L160 352.1l-96.4-96.4c-9.4-9.4-24.6-9.4-33.9 0L7 278.3c-9.4 9.4-9.4 24.6 0 33.9l136 136c9.4 9.5 24.6 9.5 34 .1z" />
+          </svg>
+        </button>
 
         {/* Bell Icon */}
         <button aria-label="Notifications" className="relative">

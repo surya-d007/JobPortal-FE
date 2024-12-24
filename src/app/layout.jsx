@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import Sidebar from "../components/Sidebar";
 import Topbar from "../components/Topbar";
 import "./globals.css";
@@ -16,6 +16,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-poppins",
+});
+
 export default function RootLayout({ children }) {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -24,7 +30,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col h-screen`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased flex flex-col h-screen`}
       >
         <div className="flex flex-1 relative">
           {/* Sidebar Overlay */}
@@ -48,7 +54,9 @@ export default function RootLayout({ children }) {
           <div className="flex flex-col flex-1">
             {/* Topbar */}
             <Topbar onHamburgerClick={() => setIsSidebarOpen(!isSidebarOpen)} />
-            <div className="p-4">{children}</div>
+            <div className="bg-[#ECEBFF] px-4 lg:px-10 font-poppins ">
+              {children}
+            </div>
           </div>
         </div>
       </body>
