@@ -2,6 +2,7 @@ import React from "react";
 import TextWithPartialUnderline from "@/components/designs/TextWithPartialUnderline";
 import TextWithReadMore from "@/components/designs/TextWithReadMore";
 import JobCard from "@/components/cards/JobCard";
+import AdBanner from "@/components/AdBanner";
 
 export default function HomePage() {
   return (
@@ -315,6 +316,228 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
+
+            <JobCard
+              imgUrl="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8"
+              title="Frontend Developer"
+              description="Build stunning user interfaces.\nCollaborate with designers to create seamless user experiences."
+              postedOn="25 Dec, 2024"
+              location="San Francisco, CA"
+              skillsRequired="HTML, CSS, JavaScript\nReact, Redux, TailwindCSS"
+              jobType="Full-Time"
+              expectedSalary="15 - 25 LPA"
+              experience="2 yrs +"
+            />
+            <JobCard
+              imgUrl="https://images.unsplash.com/photo-1515879218367-8466d910aaa4"
+              title="Backend Engineer"
+              description="Design and maintain robust APIs.\nWork with cloud technologies to create scalable systems."
+              postedOn="24 Dec, 2024"
+              location="Remote"
+              skillsRequired="Node.js, Express, MongoDB\nAWS, RESTful APIs"
+              jobType="Part-Time"
+              expectedSalary="12 - 20 LPA"
+              experience="3 yrs +"
+            />
+            <JobCard
+              imgUrl="https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+              title="Software Engineer Intern"
+              description="Gain hands-on experience working on real-world projects.\nCollaborate with mentors to build your skillset."
+              postedOn="23 Dec, 2024"
+              location="Bangalore, India"
+              skillsRequired="Java, Spring Boot, SQL"
+              jobType="Internship"
+              expectedSalary="5 - 10 LPA"
+              experience="0 - 1 yr"
+            />
+            <JobCard
+              imgUrl="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+              title="UI/UX Designer"
+              description="Create wireframes, prototypes, and mockups.\nFocus on user-centric design and user testing."
+              postedOn="22 Dec, 2024"
+              location="New York, NY"
+              skillsRequired="Figma, Adobe XD, Design Systems\nUser Research, Typography"
+              jobType="Full-Time"
+              expectedSalary="18 - 22 LPA"
+              experience="3 yrs +"
+            />
+            <JobCard
+              imgUrl="https://images.unsplash.com/photo-1537432376769-00c6d4d925d5"
+              title="Data Scientist"
+              description="Analyze datasets to extract meaningful insights.\nDevelop predictive models for business solutions.\nWork on innovative projects using advanced AI techniques."
+              postedOn="21 Dec, 2024"
+              location="Toronto, Canada"
+              skillsRequired="Python, SQL, Machine Learning\nData Visualization, Statistics"
+              jobType="Contract"
+              expectedSalary="25 - 35 LPA"
+              experience="4 yrs +"
+            />
+            <JobCard
+              imgUrl="https://images.unsplash.com/photo-1519985176271-adb1088fa94c"
+              title="DevOps Engineer"
+              description="Set up CI/CD pipelines.\nWork with Kubernetes and Docker for container orchestration."
+              postedOn="20 Dec, 2024"
+              location="Austin, TX"
+              skillsRequired="AWS, Kubernetes, Docker\nTerraform, Jenkins"
+              jobType="Full-Time"
+              expectedSalary="20 - 30 LPA"
+              experience="5 yrs +"
+            />
+            <JobCard
+              imgUrl="https://images.unsplash.com/photo-1542744095-291d1f67b221"
+              title="Product Manager"
+              description="Define product requirements based on customer feedback.\nCoordinate with teams to ensure timely delivery."
+              postedOn="19 Dec, 2024"
+              location="Berlin, Germany"
+              skillsRequired="Agile, Scrum, Product Analytics\nTeam Management, Roadmapping"
+              jobType="Full-Time"
+              expectedSalary="30 - 45 LPA"
+              experience="6 yrs +"
+            />
+            <JobCard
+              imgUrl="https://images.unsplash.com/photo-1537432376769-00c6d4d925d5"
+              title="Content Writer"
+              description="Create compelling content for blogs and social media.\nWork with SEO specialists to optimize web content."
+              postedOn="18 Dec, 2024"
+              location="Delhi, India"
+              skillsRequired="SEO, WordPress, Copywriting\nProofreading, Creative Writing"
+              jobType="Freelance"
+              expectedSalary="8 - 12 LPA"
+              experience="2 yrs +"
+            />
+            <JobCard
+              imgUrl="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+              title="Graphic Designer"
+              description="Design marketing assets for web and print.\nCollaborate with marketing teams to execute campaigns."
+              postedOn="17 Dec, 2024"
+              location="Sydney, Australia"
+              skillsRequired="Photoshop, Illustrator, Branding\nTypography, Animation"
+              jobType="Part-Time"
+              expectedSalary="10 - 15 LPA"
+              experience="3 yrs +"
+            />
+            <JobCard
+              imgUrl="https://images.unsplash.com/photo-1542744095-291d1f67b221"
+              title="Marketing Specialist"
+              description="Plan and execute digital marketing campaigns.\nAnalyze performance metrics and optimize strategies."
+              postedOn="16 Dec, 2024"
+              location="London, UK"
+              skillsRequired="Google Ads, Facebook Ads, Analytics\nEmail Marketing, Social Media"
+              jobType="Full-Time"
+              expectedSalary="18 - 25 LPA"
+              experience="4 yrs +"
+            />
+            <JobCard
+              imgUrl="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8"
+              title="Mobile App Developer"
+              description="Develop high-performance mobile apps.\nEnsure seamless user experience on iOS and Android."
+              postedOn="15 Dec, 2024"
+              location="Mumbai, India"
+              skillsRequired="Flutter, Dart, Swift\nReact Native, Kotlin"
+              jobType="Full-Time"
+              expectedSalary="15 - 20 LPA"
+              experience="3 yrs +"
+            />
+            <JobCard
+              imgUrl="https://images.unsplash.com/photo-1515879218367-8466d910aaa4"
+              title="QA Tester"
+              description="Ensure high software quality by writing test cases.\nIdentify and fix bugs before releases."
+              postedOn="14 Dec, 2024"
+              location="Hyderabad, India"
+              skillsRequired="Selenium, JIRA, Test Automation\nBug Tracking, Performance Testing"
+              jobType="Contract"
+              expectedSalary="10 - 15 LPA"
+              experience="2 yrs +"
+            />
+            <JobCard
+              imgUrl="https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+              title="Cloud Architect"
+              description="Architect scalable cloud infrastructure.\nEnsure high availability and disaster recovery strategies."
+              postedOn="13 Dec, 2024"
+              location="Seattle, WA"
+              skillsRequired="AWS, Azure, Google Cloud\nKubernetes, CI/CD"
+              jobType="Full-Time"
+              expectedSalary="35 - 50 LPA"
+              experience="7 yrs +"
+            />
+            <JobCard
+              imgUrl="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+              title="Sales Manager"
+              description="Lead the sales team to achieve targets.\nManage client relationships to drive growth."
+              postedOn="12 Dec, 2024"
+              location="Boston, MA"
+              skillsRequired="CRM, Team Management, Negotiation\nBusiness Development"
+              jobType="Full-Time"
+              expectedSalary="25 - 35 LPA"
+              experience="5 yrs +"
+            />
+            <JobCard
+              imgUrl="https://images.unsplash.com/photo-1537432376769-00c6d4d925d5"
+              title="Cybersecurity Analyst"
+              description="Monitor and secure networks from threats.\nPerform penetration testing and implement security measures."
+              postedOn="11 Dec, 2024"
+              location="Singapore"
+              skillsRequired="Network Security, Ethical Hacking\nPenetration Testing, SOC"
+              jobType="Full-Time"
+              expectedSalary="22 - 30 LPA"
+              experience="4 yrs +"
+            />
+            <JobCard
+              imgUrl="https://images.unsplash.com/photo-1519985176271-adb1088fa94c"
+              title="Business Analyst"
+              description="Identify business needs and propose solutions.\nBridge the gap between stakeholders and developers."
+              postedOn="10 Dec, 2024"
+              location="Paris, France"
+              skillsRequired="Data Analysis, Communication\nRequirement Gathering, SQL"
+              jobType="Full-Time"
+              expectedSalary="20 - 30 LPA"
+              experience="3 yrs +"
+            />
+            <JobCard
+              imgUrl="https://images.unsplash.com/photo-1542744095-291d1f67b221"
+              title="HR Manager"
+              description="Manage recruitment and employee relations.\nCreate policies for a positive work culture."
+              postedOn="9 Dec, 2024"
+              location="Dubai, UAE"
+              skillsRequired="Recruitment, Payroll, Conflict Resolution\nEmployee Engagement, Communication"
+              jobType="Full-Time"
+              expectedSalary="18 - 28 LPA"
+              experience="5 yrs +"
+            />
+            <JobCard
+              imgUrl="https://images.unsplash.com/photo-1517423440428-a5a00ad493e8"
+              title="SEO Specialist"
+              description="Optimize website rankings through effective SEO strategies.\nAnalyze traffic and keyword performance."
+              postedOn="8 Dec, 2024"
+              location="Chicago, IL"
+              skillsRequired="SEO, Google Analytics, Keyword Research\nContent Optimization"
+              jobType="Contract"
+              expectedSalary="12 - 18 LPA"
+              experience="3 yrs +"
+            />
+            <JobCard
+              imgUrl="https://images.unsplash.com/photo-1515879218367-8466d910aaa4"
+              title="AI Engineer"
+              description="Design and deploy AI models for business solutions.\nWork on natural language processing and computer vision tasks."
+              postedOn="7 Dec, 2024"
+              location="Tokyo, Japan"
+              skillsRequired="Python, TensorFlow, NLP\nDeep Learning, Computer Vision"
+              jobType="Full-Time"
+              expectedSalary="40 - 60 LPA"
+              experience="5 yrs +"
+            />
+            <JobCard
+              imgUrl="https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+              title="Blockchain Developer"
+              description="Develop secure blockchain solutions for businesses.\nWork on smart contracts and decentralized applications."
+              postedOn="6 Dec, 2024"
+              location="Remote"
+              skillsRequired="Ethereum, Solidity, Cryptography\nDApps, Blockchain Frameworks"
+              jobType="Full-Time"
+              expectedSalary="30 - 50 LPA"
+              experience="4 yrs +"
+            />
+
             <JobCard
               imgUrl="https://sourcebae.com/blog/wp-content/uploads/2023/08/1_b_al7C5p26tbZG4sy-CWqw.png"
               title="LinkedIn Software Developer Intern"
